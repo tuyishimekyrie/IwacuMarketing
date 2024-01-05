@@ -14,7 +14,11 @@ const Navbar = () => {
       </div>
       <ul className="space-x-8 ">
         {menuLinks.map((menu, index) => (
-          <Link key={index} href={menu.href} className=" hover:text-yellow-300">
+          <Link
+            key={index}
+            href={menu.href}
+            className=" hover:text-yellow-300 hover:cursor-pointer transition ease-out delay-75"
+          >
             {menu.name}
           </Link>
         ))}
